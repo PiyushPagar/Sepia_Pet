@@ -1,5 +1,4 @@
 // ignore_for_file: avoid_print, library_private_types_in_public_api
-import 'package:get/get.dart';
 import 'dart:convert';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
@@ -54,6 +53,15 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 70,
             ),
             Container(
+              decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(1),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            spreadRadius: 0.1,
+                                            color: black.withOpacity(0.01),
+                                            blurRadius: 0.5)
+                                      ]),
                child:Align(
                         alignment: Alignment.topLeft,
                         child: Container(
